@@ -6,14 +6,12 @@ metadata:
   #   name: app-data
 spec:
   volumes:
-  - name: app-data-pvc
-    persistentVolumeClaim:
-      claimName: app-data-pvc
+  # - name: app-data-pvc
+    # persistentVolumeClaim:
+    #   claimName: app-data-pvc
   containers:
   - name: nginx-app
     image: nginx
-    volumeMounts:
-    - name: app-data-pvc
-      mountPath: /usr/share/nginx/html
-    selectors:
-      name: app-data
+    # volumeMounts:
+    # - name: app-data-pvc
+    #   mountPath: /usr/share/nginx/html
