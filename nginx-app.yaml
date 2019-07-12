@@ -5,7 +5,7 @@ metadata:
 spec:
   volumes:
   - name: app-data-pvc
-    PersistentVolumeClaim:
+    hostPath:
       path: "/data/app-data"
   containers:
   - name: nginx-app
