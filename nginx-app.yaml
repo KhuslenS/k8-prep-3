@@ -11,5 +11,5 @@ spec:
   - name: nginx-app
     image: nginx
     volumeMounts:
-    - name: data
+    
       mountPath: /usr/share/nginx/html
