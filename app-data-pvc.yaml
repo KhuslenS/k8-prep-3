@@ -5,7 +5,7 @@ metadata:
   labels: 
     name: app-data
 spec:
-  # storageClassName: manual
+  storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:

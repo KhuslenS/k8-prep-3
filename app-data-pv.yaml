@@ -5,7 +5,7 @@ metadata:
   labels:
     name: app-data
 spec: 
-  # storageClassName: manual
+  storageClassName: manual
   capacity:
     storage: 1Gi
   accessModes:
